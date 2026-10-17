@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #0b0b12;
+  font-family: system-ui, sans-serif;
+  color: #f2f2f2;
+}
+
+#art {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#panel {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 14px;
+}
+
+#dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ef4444;
+}
+
+#dot.on {
+  background: #22c55e;
+}
+
+#address {
+  width: 160px;
+  padding: 4px 8px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #111;
+  color: #f2f2f2;
+}
+
+#connect {
+  padding: 4px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #f2f2f2;
+  color: #111;
+  cursor: pointer;
+}
+
+#last {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+}
+
+#last.show {
+  opacity: 0.9;
+  transition: opacity 0.1s;
+}
+
+#help {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 14px;
+  white-space: nowrap;
+}

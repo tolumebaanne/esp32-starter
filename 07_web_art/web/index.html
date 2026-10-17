@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="art"></canvas>
+
+  <div id="panel">
+    <span id="dot"></span>
+    <span id="status">Not connected</span>
+    <input id="address" value="esp32-art.local" aria-label="Board address">
+    <button id="connect">Connect</button>
+  </div>
+
+  <div id="last"></div>
+
+  <div id="help">1 press: bloom &nbsp;&middot;&nbsp; 2 presses: new colours &nbsp;&middot;&nbsp; 3 presses: sweep clean</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
